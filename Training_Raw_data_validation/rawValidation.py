@@ -9,9 +9,6 @@ import pandas as pd
 from application_logging.logger import App_Logger
 
 
-
-
-
 class Raw_Data_validation:
 
     def __init__(self,path):
@@ -36,8 +33,6 @@ class Raw_Data_validation:
             self.logger.log(file,message)
 
             file.close()
-
-
 
         except ValueError:
             file = open("Training_Logs/valuesfromSchemaValidationLog.txt", 'a+')
